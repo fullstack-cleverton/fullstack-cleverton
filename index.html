@@ -32,16 +32,21 @@
 					</center>
 </head>
 
-<body onpageshow="myFunction()">
+<body> <body onpageshow="myFunction(event)">
 
-
+<h1></h1>
 
 
 <script>
-function myFunction() {
-  alert("Welcome!");
+function myFunction(event) { 
+  if (event.persisted) {
+    alert("");
+  } else {
+    alert(" browser");
+  }
 }
-</script> 
+</script>
+
 	
 	
 	
